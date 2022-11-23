@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>AIA생명(무)뉴이좋은치아보험(갱신형)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/material.indigo-pink.min.css">
+    <script defer src="../js/material.min.js"></script>
+</head>
+<body>
+    <div class="evt_wrap">
+        <div class="evt_present">
+            <div class="evt_top">
+                <img src="../images/agent_cert.jpg" alt="AIA생명(무)뉴이좋은치아보험(갱신형) - 준법감시인 확인필COM-2022-11-0029(2022.11.10~2023.11.09)">
+            </div>
+            <div class="tit_area">
+                <h1>
+                    <img src="../images/tit_img.jpg" style="vertical-align:top;" alt="때우는 충전치료, 씌우는 크차운치료, 치료비 많이드는 임플란트(특약)까지 보장!" />
+                </h1> 
+            </div>
+
+            <div class="tab_area">
+                <ul>
+                    <li class="on" data-tab="#tab_cnt_01">충전치료</li>
+                    <li data-tab="#tab_cnt_02">보철치료</li>
+                </ul>
+                <div class="tab_cnt_wrap">
+                    <div class="tab_cnt" id="tab_cnt_01">
+                        <img src="../images/tab_01_cnt.jpg" alt="재료 상관없이, 개수 제한 NO! - 금/세라믹, 레진 등, 아말감 : 가입 91일째부터 보장, 충전/크라운 치료급여금은 1년 이내 50%보장">
+                    </div>
+                    <div class="tab_cnt" id="tab_cnt_02">
+                        <img src="../images/tab_02_cnt.jpg" alt="큰 돈 드는 보철치료 든든하게!(특약가입시) 임플란트 100만원, 브릿지 50만원 틀니 50만원">
+                    </div>
+                </div>                
+            </div>
+
+            <script>
+                // tab 열고 닫기
+                document.addEventListener('DOMContentLoaded', function() {
+
+                    if (window.NodeList && !NodeList.prototype.forEach) {
+                        NodeList.prototype.forEach = Array.prototype.forEach;
+                    }
+
+                    if (document.querySelectorAll('.tab_area ul li').length < 0) return false;
+                    if (document.querySelectorAll('.tab_cnt').length < 0) return false;
+
+                    var tabs = document.querySelectorAll('.tab_area ul li');
+                    var tabContents = document.querySelectorAll('.tab_cnt');
+
+                    function targetRemoveClassName(objs, className) {
+                        objs.forEach(function(curTarget, curTargetIndex, targetList) {
+                            curTarget.classList.remove(className);
+                        });
+                    }
+
+                    function targetHide(objs) {
+                        objs.forEach(function(curTarget, curTargetIndex, targetList) {
+                            curTarget.style.display = "none";
+                        });
+                    }
+
+                    tabs.forEach(function(currentTab, currentIndex, listObj) {
+                        currentTab.addEventListener('click', function() {
+                            targetRemoveClassName(tabs, 'on');
+                            this.classList.add('on');
+                            let currentTabCnt = document.querySelector(this.getAttribute('data-tab'));
+                            targetHide(tabContents);
+                            currentTabCnt.style.display = "block";
+                        });
+                    });
+                });
+            </script>            
+        </div><!--/evt_present-->
+        <div class="evt_form_wrap">
+            <ul class="form_list">
+                <li>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="ipt_name" placeholder="이름" autocomplete="off" />
+                        <label class="mdl-textfield__label" for="ipt_name">이름</label>
+                    </div>
+                </li>
+                <li>
+					<div class="birth_ipt_area">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="ipt_birth_date" placeholder="예) 840101" autocomplete="off" />
+							<label class="mdl-textfield__label" for="ipt_birth_date">생년월일</label>
+						</div>
+					</div>
+					<div class="gender_ipt_area">
+						<span class="gender_radio">
+							<input type="radio" name="sex" value="1" id="man" checked />
+							<label for="man">남</label>
+							<input type="radio" name="sex" value="2" id="woman" />
+							<label for="woman">여</label>
+						</span>
+					</div>
+				</li> 
+                <li>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" name="phone_num" type="text" id="phone_num" placeholder="'-' 없이 입력" autocomplete="off" />
+						<label class="mdl-textfield__label" for="phone_num">휴대폰번호</label>
+					</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="evt_agree_wrap">
+
+            <ul class="agree_list">
+                <li>
+                    <div class="agr_tit">
+                        <span class="chk_each_box"><input type="checkbox" name="agree" id="terms01" /><label for="terms01"></label></span>
+                        <label for="terms01"><em>개인정보 수집 및 이용에 관한 내용에 동의함</em></label>
+                        <a href="#" class="btn_details">보기</a>
+                    </div>
+                    <div class="agr_cnt" style="display:none">
+                        <div class="inner">
+                            <h4>개인정보 수집 및 이용</h4>
+                            <h5>개인정보 수집자</h5>
+                            <p>· AIA생명</p>
+                            <h5>개인정보의 수집 · 이용 목적 및 수집하는 항목 (필수)</h5>
+                            <p>· 본인식별확인 : 성명, 성별, 생년월일</p>
+                            <p>· 보험상품 안내(전화, 문자) 및 고객민원 상담업무 : 성명, 성별, 생년월일, 휴대폰번호, 참여일시, 참여매체, 보험상품명, 경품명, IP Address</p>
+                            <p>· 경품발송업무 : 휴대폰번호, 경품명</p>
+                            <h5>개인정보 보유기간</h5>
+                            <p>· 수집일로부터 1년간 (고객 요청 시 지체없이 파기)</p>
+                        </div>
+                    </div><!-- /agr_cnt -->      
+                </li>
+                <li>
+                    <div class="agr_tit">
+                        <span class="chk_each_box"><input type="checkbox" name="subAgree" id="terms02" /><label for="terms02"></label></span>
+                        <label for="terms02"><em>개인정보 위탁에 관한 내용에 동의함</em></label>
+                        <a href="#" class="btn_details">보기</a>
+                    </div>
+                    <div class="agr_cnt" style="display:none">
+                        <div class="inner">
+                            <h4>개인정보 취급 위탁을 받는 자</h4>
+                            <h5>㈜열심히커뮤니케이션즈</h5>
+                            <p>· 고객정보 및 저장 서버 관리, 경품 발송 대행, 고객 상담 업무, 고객 상담 접수 및 접수 정보 전달 </p>
+                            <h5>㈜한경닷컴</h5>
+                            <p>· 경품 발송 대행</p>
+                            <h5>㈜엠앤와이즈</h5>
+                            <p>· 메시지 발송 업무 대행</p>
+                            <h5>NICE평가정보㈜</h5>
+                            <p>· 본인 식별 확인</p>
+                        </div>
+                    </div><!-- /agr_cnt -->   
+                </li>
+            </ul>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var btnShowDetails = document.querySelectorAll('.btn_details');
+
+                    btnShowDetails.forEach(function(el, index) {
+                        el.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            var self = this;
+                            
+                            var agreeCnt = self.parentElement.nextElementSibling;
+                            if(agreeCnt.style.display == "none") {
+                                agreeCnt.style.display = "block";
+                                self.textContent = "닫기";
+                            }else{
+                                agreeCnt.style.display = "none";
+                                self.textContent = "보기";
+                            }
+                        }, true);
+                    });
+
+
+                    // 보험료 조회 버튼 클릭 효과
+                    var btnSearch = document.querySelector('.btn_search');
+                    btnSearch.addEventListener('touchstart', function(e) {
+                        this.classList.add('on');
+                    }, false);
+                    btnSearch.addEventListener('touchend', function(e) {
+                        this.classList.remove('on');
+                    }, false);
+
+                });
+            </script>
+        </div><!--/evt_agree_wrap-->
+
+        <div class="btn_srch_wrap">
+            <p><img src="../images/form_tit.jpg" alt="월 보험료는 얼마일까요?" ></p>
+            <a href="#" class="btn_search"><img src="../images/btn_premium.gif" alt="보험료 조회"></a>
+        </div>
+
+        <div class="btn_txt">
+            <p>보험료 조회 시 전화 상담을 통해 보험료 및 상품안내를 드릴 예정입니다.</p>
+        </div>
+        
+        <div class="evt_notice_wrap">
+            <ul>
+                <li>· 상품안내 및 이벤트 참여 동의 철회 : 080-519-1234 (무료)</li>
+                <li>· 상기 동의를 거부할 권리가 있으나, 수집 및 이용과 위탁에 동의하지 않을 경우 상품 안내 및 이벤트 참여가 불가능합니다.</li>
+                <li>· 타인의 개인정보 도용 시 형사상 처벌을 받을 수 있으며, 정확한 정보를 입력하지 않을 경우 개인정보 수집 및 이용, 위탁에 동의하셔도 상담 신청 및 이벤트 참여가 불가능합니다.</li>
+            </ul>
+        </div>
+    </div><!--/evt_wrap-->
+</body>
+</html>
